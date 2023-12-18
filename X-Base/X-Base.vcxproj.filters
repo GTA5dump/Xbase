@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hooking">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hooking\Hook Helper">
+      <UniqueIdentifier>{4d239bf4-5856-41c8-ba5e-2a50adcda775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\PatternScanning">
+      <UniqueIdentifier>{92105ebb-108b-4907-bc34-6202eae473a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern">
+      <UniqueIdentifier>{74811f2a-167d-4c64-9d9d-bc4510185d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\fmt">
+      <UniqueIdentifier>{759a7747-3402-4781-8135-8886188a860e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\MinHook">
+      <UniqueIdentifier>{48c18361-e43c-489b-828c-46f5f3a9cd25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Pointers">
+      <UniqueIdentifier>{64734177-04ab-46b4-9c40-0bc5faaceab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\ImGui">
+      <UniqueIdentifier>{099e66f9-6eae-426a-8f76-2df488cbe3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\ImGui\CPP">
+      <UniqueIdentifier>{bbbeb080-a441-4160-9ccb-e946a07955f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\ImGui\HPP">
+      <UniqueIdentifier>{f543c2dd-6bb6-4a7b-bcf1-2bb90dd9c29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{c4dfb545-08d6-4cbf-a7b4-39525b474cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Natives">
+      <UniqueIdentifier>{9630507e-4310-42f8-9e77-2fba5cac15ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="General\Log">
+      <UniqueIdentifier>{d8d9b6b2-e9b0-402c-9568-e9515bf285a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{7509f1fd-9c06-4679-8b02-1cf3b62a618e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{b814d06a-4695-4b74-9a92-b281eacb82fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Rage">
+      <UniqueIdentifier>{a74ba644-b970-41f8-9e5e-cf193a467dea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hook_helper.hpp">
+      <Filter>Hooking\Hook Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.hpp">
+      <Filter>General\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="chrono.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="compile.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="core.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="format.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="format-inl.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="locale.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="ostream.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="posix.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="printf.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="ranges.h">
+      <Filter>Extern\fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="hooking.hpp">
+      <Filter>Hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="pointers.hpp">
+      <Filter>Hooking\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\MinHook.h">
+      <Filter>Extern\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Extern\ImGui\HPP</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern_scan.hpp">
+      <Filter>Hooking\PatternScanning</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Crossmap.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="datatypes.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPointer.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="natives.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="Invoker.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="Caller.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptThread.hpp">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScript.hpp">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuUI.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DRenderer.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="lists.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Handle.hpp">
+      <Filter>Script\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes.hpp">
+      <Filter>Script\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.hpp">
+      <Filter>Script\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitbuffer.hpp">
+      <Filter>Script\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripting.hpp">
+      <Filter>Script\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Integrity.hpp">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Spoofer.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Protection.hpp">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Chat.hpp">
+      <Filter>Script</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="format.cc">
+      <Filter>Extern\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="posix.cc">
+      <Filter>Extern\fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="hooking.cpp">
+      <Filter>Hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointers.cpp">
+      <Filter>Hooking\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Extern\ImGui\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Invoker.cpp">
+      <Filter>Natives</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DRenderer.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern_scan.cpp">
+      <Filter>Hooking\PatternScanning</Filter>
+    </ClCompile>
+    <ClCompile Include="Spoofer.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Protection.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitbuffer.cpp">
+      <Filter>Script\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Chat.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoof_stub.asm">
+      <Filter>Natives</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
